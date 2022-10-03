@@ -1,5 +1,5 @@
 class RestaurantPizza < ApplicationRecord
-  validates :price, inclusion: { in: 1..30 }
+  validates :price, numericality: { in: 1..30 }
 
   belongs_to :restaurant
   belongs_to :pizza

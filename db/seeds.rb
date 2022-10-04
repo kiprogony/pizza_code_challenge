@@ -15,3 +15,8 @@ Restaurant.create!(name: 'McDonalds', address: '41180-7830' )
 Restaurant.create!(name: 'Starbucks', address: '3717 Keyser Ridge Road' )
 Restaurant.create!(name: 'Taco Bell', address: '3625 Science Center Drive' )
 Restaurant.create!(name: 'Pizza Hut', address: '1721 Patterson Fork Road' )
+
+RestaurantPizza.create!(price: '6', pizza_id: "1", restaurant_id: '2')
+RestaurantPizza.create!(price: '10', pizza_id: "2", restaurant_id: '3')
+RestaurantPizza.create!(price: '2', pizza_id: "3", restaurant_id: '4')
+RestaurantPizza.create!(price: '5', pizza_id: "4", restaurant_id: '3')

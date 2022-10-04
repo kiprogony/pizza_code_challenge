@@ -8,8 +8,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
   def show
     restaurant = Restaurant.find(params[:id])
-    # render json: restaurant, include: ['pizzas']
-    
+    render json: restaurant
   end
 
   def destroy
